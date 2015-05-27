@@ -1,0 +1,422 @@
+{
+  "templates": {
+    "temp0": {
+      "id": 0,
+      "title": "welcome",
+      "content": {
+        "pinitial": {
+          "text": "Welcome to my web portfolio <div class='green-a'>— Ideate romantically, create pragmatically, design everything you do. —</div>"
+        },
+        "brackets": {
+          "bracket1": {
+            "icon": "glyphicon glyphicon-home",
+            "word": "contact",
+            "id_temp": 1
+          },
+          "bracket2": {
+            "icon": "glyphicon glyphicon-ok",
+            "word": "skills",
+            "id_temp": 2
+          },
+          "bracket3": {
+            "icon": "glyphicon glyphicon-cog",
+            "word": "works",
+            "id_temp": 3
+          }
+        },
+        "pfinal": false
+      }
+    },
+    "temp1": {
+      "id": 1,
+      "title": "contact",
+      "content": {
+        "pinitial": {
+          "text": "Here you can find all my profile links to find me. Just click on them and contact me!"
+        },
+        "brackets": false,
+        "pfinal": {
+          "text": false,
+          "list": {
+            "item1": {
+              "icon": "icons/about-profile.png",
+              "title": "WHO I AM",
+              "text": "<h4><strong>Manuel del Pozo</strong> || web developer + architect = <a class='green-a' href='http://www.adaptivepath.com/ideas/what-makes-a-design-technologist/'>design technologist</a></h4>",
+              "link": "wwww.manueldelpozo.github.io"
+            },
+            "item2": {
+              "icon": "icons/about-address_telf.png",
+              "title": "WHERE I AM",
+              "text": { "address" : "C/ Felix Rodriguez de la Fuente, 1 - 30011 Murcia - Spain", "tel" : "+34 686 12 09 34"},
+              "link": { "address" : "https://www.google.es/maps/@37.980611,-1.1224371,20z", "tel" : "callto://manudelpozo"}
+            },
+            "item3": {
+              "icon": "icons/about-mail.png",
+              "title": "HOW TO CONTACT ME",
+              "text": { "mailarch" : "mndelpozo@gmail.com" , "mailweb" : "mdp.webdeveloper@gmail.com" },
+              "link": { "mailarch" : "mailto:mndelpozo@gmail.com" , "mailweb" : "mailto:mdp.webdeveloper@gmail.com" }
+            },
+            "item4": {
+              "icon": "icons/about-linkedin.png",
+              "title": "MY LINKEDIN PROFILE",
+              "text": { "linkedinarch" : "www.linkedin.com/in/manueldelpozo" , "linkedinweb" : "www.linkedin.com/in/delpozodeveloper" },
+              "link": { "linkedinarch" : "https://wwww.linkedin.com/in/manueldelpozo" , "linkedinweb" : "https://wwww.linkedin.com/in/delpozodeveloper" }
+            },
+            "item5": {
+              "icon": "icons/about-webprofile.png",
+              "title": "MY SITES",
+              "text": { "arch" : "www.archmanudelpozo.com" , "web" : "wwww.manueldelpozo.github.io"  },
+              "link": { "arch" : "www.manudelpozo.blogspot.com" , "web" : "wwww.manueldelpozo.github.io" }
+            }
+          }
+        }
+      }
+    },
+    "temp2": {
+      "id": 2,
+      "title": "skills",
+      "content": {
+        "pinitial": {
+          "text": "Have a look and discover the information about my <strong id='link-per'>personal</strong> skills, my <strong id='link-edu'>academic</strong> experience and my <strong id='link-tech'>tech</strong>nical abilities."
+        },
+        "brackets": {
+          "bracket1": {
+            "icon": "glyphicon glyphicon-user",
+            "word": "personal",
+            "id_temp": 4
+          },
+          "bracket2": {
+            "icon": "glyphicon glyphicon-education",
+            "word": "academic",
+            "id_temp": 5
+          },
+          "bracket3": {
+            "icon": "glyphicon glyphicon-superscript",
+            "word": "tech",
+            "id_temp": 6
+          }
+        },
+        "pfinal": {
+          "text": "My <strong id='link-edu'>educational background</strong> and <strong id='link-map'>work experience</strong> make me a talented and bright <strong id='link-per'>person</strong> with potential and motivation. <br>Working on multiple fields in different countries in Europe has provide me with <strong id='link-tech'>technical abilities</strong> to make innovative, varied and adaptable projects.",
+          "list": false
+          
+        }
+      }
+    },
+    "temp3": {
+      "id": 3,
+      "title": "works",
+      "content": {
+        "pinitial": {
+          "text": "Find out all the information about my work experience in the fields of <strong id='link-web'>web</strong> development and <strong id='link-arch'>arch</strong>itecture."
+        },
+        "brackets": {
+          "bracket1": {
+            "icon": "glyphicon glyphicon-globe",
+            "word": "map",
+            "id_temp": 7
+          },
+          "bracket2": {
+            "icon": "glyphicon glyphicon-sound-stereo",
+            "word": "web",
+            "id_temp": 8
+          },
+          "bracket3": {
+            "icon": "glyphicon glyphicon-equalizer",
+            "word": "arch",
+            "id_temp": 9
+          }
+        },
+        "pfinal": {
+          "text": "In this section you can find my international and multidisciplinary work experience in different formats. <br>I invite you to have a look on the <strong id='link-map'>google API map</strong> to check my european work placements.<br><img src='icons/maps/map-europe' width='80%' height='auto' style='margin:0 auto' />",
+          "list": false
+        }
+      }
+    },
+    "temp4": {
+      "id": 4,
+      "title": "skills/personal",
+      "content": {
+        "pinitial": {
+          "text": "Here I define myself as a very hard-working, very creative, self-learner, team-player and ambitious person. <br>In addition I include my <strong>language</strong> skills and my hobbits. "
+        },
+        "brackets": false,
+        "pfinal": {
+          "text": false,
+          "list": {
+            "item1": {
+              "icon": "icons/per-creativity.png",
+              "title": "CREATIVITY AND INNOVATION",
+              "text": "Highly creative design sense that strengthen the conception of innovative projects. // Innovative problem-solver that generate workable solutions and resolve complaints.",
+              "link": false
+            },
+            "item2": {
+              "icon": "icons/per-thinking.png",
+              "title": "ANALITICAL-DIVERGENT THINKING AND QUICK LEARNING",
+              "text": "Analytical thinking for identifying, scrutinizing, improving, and streamlining complex work processes. // Strong willingness to learn. // Ability to manage multiple assignments and tasks, set priorities, adapt to changing conditions and reach the goals in time.",
+              "link": false
+            },
+            "item3": {
+              "icon": "icons/per-team.png",
+              "title": "TEAM WORK AND COMMUNICATION",
+              "text": "Resourceful team player who excels at building trusting relationships with customers and colleagues. // Ability to communicate advanced concepts with a diverse workforce in multicultural settings // Confluence and workflow with GITHUB + JIRA-AGILE + SLACK ",
+              "link": false
+            },
+            "item4": {
+              "icon": "icons/per-languages.png",
+              "title": "LANGUAGES",
+              "text": "// SPANISH: { MOTHER TONGUE } // ENGLISH: { FLUENT C1 } // FRENCH: { FLUENT B2 } // GERMAN: { BASIC A2 } // POLISH: { BASIC A1 } // ",
+              "link": false
+            },
+            "item5": {
+              "icon": "icons/per-leisures.png",
+              "title": "LEISURES",
+              "text": "// TRAVELING // SPORT // PHOTOGRAPHY // VIDEO EDITING // SCALE MODELING // PHOTO RETOUCHING // BOOK AND MAGAZINE LAYOUTS // ACRYLIC DRAWINGS //",
+              "link": false
+            }
+            
+          }
+        }
+      }
+    },
+    "temp5": {
+      "id": 5,
+      "title": "skills/academic",
+      "content": {
+        "pinitial": {
+          "text": "My educational background includes proffesional courses in Web Application Development & Design and Masters Degrees in Architecture at the University of Alicante and University of Ulster in Belfast. "
+        },
+        "brackets": false,
+        "pfinal": {
+          "text": false,
+          "list": {
+            "item1": {
+              "icon": "icons/edu-webdevelopment.png",
+              "title": "<strong>WEB APPLICATION DEVELOPMENT </strong><br> IES JOSÉ PLANES - MURCIA (SPAIN) - 2013/15",
+              "text": "// OBJECT-ORIENTED PROGRAMMING // RELATIONAL DATABASES (ER-MODEL) // DMBS (SQL) // COMPUTER SYSTEMS // WEB APP INTERFACE DESIGN // WEB SERVER ADMINISTRATION // SUBNETTING // PROJECT MANAGEMENT // CMS // UI-UX DESIGN // RESPONSIVE WEB DESIGN // ENGLISH FOR IT //",
+              "link": false
+            },
+            "item2": {
+              "icon": "icons/edu-webmobile.png",
+              "title": "<strong>WEBAPPS FOR MOBILE DEVICES (FIREFOX-OS) </strong><br> MIRADAX - COURSE ONLINE - 2014",
+              "text": "// GEOLOCATION API // SVG AND CANVAS // JSON // TOUCH EVENTS // JQUERY AND ZEPTO // DOM // RESPONSIVE WEB DESIGN HTML5 AND CSS3 // FIREFOX WEB DEVELOPER TOOLS //",
+              "link": false
+            },
+            "item3": {
+              "icon": "icons/edu-webdesign.png",
+              "title": "<strong>WEB DESIGN & WEB INTEGRATION COURSES </strong><br> FORMATO FORMACIÓN + ACADEMIA CIMBRA - MURCIA (SPAIN) - 2011/13",
+              "text": "// ADOBE CREATIVE SUITE: { PHOTOSHOP, DREAMWEAVER, FIREWORKS, FLASH PROFESSIONAL, IN-DESIGN, EDGE ANIMATE, AFTER-EFFECTS } // WEB INTEGRATION: { SITE USABILITY, SEO POSITIONING, WEB STANDARDS (W3C), BROWSER COMPATIBILITY, DIGITAL MARKETING TRENDS } //",
+              "link": false
+            },
+            "item4": {
+              "icon": "icons/edu-architecture.png",
+              "title": "<strong>M. ARCHITECTURE ENGINEERING AND LANDSCAPE </strong><br> UNIVERSITY OF ALICANTE - ALICANTE (SPAIN) - 2003/11",
+              "text": "// HOUSING AND PUBLIC FACILITIES // RENOVATION PROJECT // LANDSCAPE AND URBAN PLANNING // SUSTAINABLE HOUSING STRATEGIES // STRUCTURAL CALCULATION // HOME AUTOMATION PROJECTS // BUILDING SYSTEMS // PATHOLOGIES AND COST ESTIMATING //",
+              "link": false
+            },
+            "item5": {
+              "icon": "icons/edu-archiulster.png",
+              "title": "<strong>BSC(HONS) ARCHITECTURAL TECHNOLOGY AND MANAGEMENT </strong><br> UNIVERSITY OF ULSTER - BELFAST (NI UNITED KINGDOM) - 2008/09 ",
+              "text": "// BUILDING SYSTEMS DETAILS // CAR SHOWROOM MUSEUM // SHOPPING MALL IN DONEGALL PLACE //",
+              "link": false
+            },
+            "item6": {
+              "icon": "icons/edu-archicourses.png",
+              "title": "<strong>OTHER ARCHITECTURE COURSES </strong><br> UNIVERSITY OF ALICANTE + POLYTHEC. UNIVERSITY OF CARTAGENA - ALICANTE + MURCIA (SPAIN) - 2002/11",
+              "text": "// BUILDING ENGINEERING // HOME AUTOMATION // UNIVERSAL ACCESIBILITY // SOFTWARE FOR STRUCTURAL CALCULATION // BUILDING CONCRETE PATHOLOGIES // VIRTUAL STGE DESIGN WITH 3DS-MAX //",
+              "link": false
+            }
+          }
+        }
+      }
+    },
+    "temp6": {
+      "id": 6,
+      "title": "skills/tech",
+      "content": {
+        "pinitial": {
+          "text": "My technical skills have grown up exponentially in coding technologies and graphic design tools during the last few year. "
+        },
+        "brackets": false,
+        "pfinal": {
+          "text": false,
+          "list": {
+            "item1": {
+              "icon": "icons/tech-frontend.png",
+              "title": "FRONT-END",
+              "text": "// HTML5 // CSS3: { LESS } // JAVASCRIPT: { JQUERY, JSON, AJAX, BACKBONES, ANGULAR } // BOOTSTRAP //",
+              "link": false
+            },
+            "item2": {
+              "icon": "icons/tech-backend.png",
+              "title": "BACK-END",
+              "text": "// JAVA: { PLAY FOR SCALA (BASIC) } // PHP: { SIMFONY } // XML: { XSL, XSD,  XPath } // MYSQL //",
+              "link": false
+            },
+            "item3": {
+              "icon": "icons/tech-work.png",
+              "title": "WORKFLOW",
+              "text": "// GITHUB // JIRA-AGILE // SLACK // DROPBOX // GOOGLE DRIVE //",
+              "link": false
+            },
+            "item4": {
+              "icon": "icons/tech-graphic.png",
+              "title": "GAPHIC DESIGN",
+              "text": "// PHOTOSHOP // DREAMWEAVER // EDGE ANIMATE // AFTER-EFFECTS // FIREWORKS // FLASH PROFESSIONAL // IN-DESIGN // ILLUSTRATOR //",
+              "link": false
+            },
+            "item5": {
+              "icon": "icons/tech-arch.png",
+              "title": "ARCHITECTURAL DESIGN",
+              "text": "// REVIT // AUTOCAD // 3DS-MAX+VRAY // SKETCHUP // ARCHICAD // VECTORWORKS // CYPECAD //",
+              "link": false
+            }
+          }
+        }
+      }
+    },
+    "temp7": {
+      "id": 7,
+      "title": "works/map",
+      "content": {
+        "pinitial": {
+          "text": "Pass the mouse over the classified cities to reveal further information.<br><span><img src='icons/maps/web-points'/></span> Web points // <span><img src='icons/maps/arch-points'/></span> Architecture points"
+        },
+        "brackets": false,
+        "pfinal": {
+          "text": "map",
+          "list": false,
+          "map" : {
+            "city1": {
+              "city": "Berlin",
+              "lat": 52.520007,
+              "lng": 13.404954,
+              "info": "<strong>FRONT-END DEVELOPER </strong><br> GO-POPUP - BERLIN - 2015",
+              "icon": "icons/maps/works-gopopup.png"
+            },
+            "city2": {
+              "city": "Belfast",
+              "lat": 54.597285,
+              "lng": -5.930120,
+              "info": "<strong>PROJECT ARCHITECT </strong><br> DEGREE PROJECT ULSTERLINES - BELFAST - 2009/11",
+              "icon": "icons/maps/works-ulsterlines.png"
+            },
+            "city3": {
+              "city": "Katowice",
+              "lat": 50.264892,
+              "lng": 19.023782,
+              "info": "<strong>ARCHITECTURAL ASSISTANT </strong><br> JOJKO+NAWROCKI ARCHITEKCI - KATOWICE - 2012/13",
+              "icon": "icons/maps/works-ja.png"
+            },
+            "city4": {
+              "city": "Besancon",
+              "lat": 47.237829,
+              "lng": 6.024054,
+              "info": "<strong>URBAN-ARCHITECT PLANNER </strong><br> AUDAB AGENCE D'URBANISME DE BESANCON - BESANCON - 2011",
+              "icon": "icons/maps/works-audab.png"
+            },
+            "city5": {
+              "city": "Clermont-Ferrand",
+              "lat": 45.777222,
+              "lng": 3.087025,
+              "info": "<strong>FLASH WEB DESIGNER </strong><br> AU 10 ET DÉCO - CLERMONT FERRAND - 2011",
+              "icon": "icons/maps/works-au10etdeco.png"
+            },
+            "city6": {
+              "city": "Murcia",
+              "lat": 37.992240,
+              "lng": -1.130654,
+              "info": "<strong>BIM ARCHITECT </strong><br> FREELANCER - MURCIA - 2014",
+              "icon": "icons/maps/works-bim.png"
+            },
+            "city7": {
+              "city": "Madrid",
+              "lat": 40.416775,
+              "lng": -3.703790,
+              "info": "<strong>UI/UX DESIGNER AND FRONT-END DEVELOPER </strong><br> QUESERADEMI (STARTUP) - MADRID - 2012/15",
+              "icon": "icons/maps/works-qsdm.png"
+            }
+          }
+        }
+      }
+    },
+    "temp8": {
+      "id": 8,
+      "title": "works/web",
+      "content": {
+        "pinitial": {
+          "text": "My strong work experience as a front-end developer during the last 4 years has been beneficial to my career in the field of Web Application Development. "
+        },
+        "brackets": false,
+        "pfinal": {
+          "text": false,
+          "list": {
+            "item1": {
+              "icon": "icons/works-gopopup.png",
+              "title": "<strong>FRONT-END DEVELOPER </strong><br> GO-POPUP - BERLIN (GERMANY) - 2015",
+              "text": "// PHP DATA MIGRATOR // LANDING PAGES WITH WORDPRESS // SCALA BUILD TOOL PLUGINS // BOOTSRAP DESIGN // UI-UX MOCKUPS // GOOGLE MAPS API //",
+              "link": "http://www.gopopup.com/en"
+            },
+            "item2": {
+              "icon": "icons/works-qsdm.png",
+              "title": "<strong>UI/UX DESIGNER AND FRONT-END DEVELOPER </strong><br> QUESERADEMI (STARTUP) - MADRID (SPAIN) - 2012/15",
+              "text": "// MOCKUPS, WIREFRAMES AND STORYBOARDS // WEB INTERFACE SKETCHES // PROMOTIONAL VIDEOS // WEBSITE EMULATOR FLASH - MOTION GRAPHICS // DYNAMIC CHARTS // AJAX AUTOCOMPLETE // JQUERY ANIMATIONS // BOOTSTRAP RESPONSIVE DESIGN //",
+              "link": "http://queserademi.es/"
+            },
+            "item3": {
+              "icon": "icons/works-web.png",
+              "title": "<strong>WEB APPLICATION DEVELOPER </strong><br> IES JOSÉ PLANES - MURCIA (SPAIN) - 2013/15",
+              "text": "// JAVA INTERNSHIP MANAGEMENT SYSTEM: { ER-MODEL DOCUMENTS, JBDC APPLICATIONS } // <br>WEB APP PROJECTS: { PHP APPLICATIONS (MODEL-VIEW-CONTROLLER), THEMATIC WEB TUNCC, CHAT WITH AJAX, VOTING SURVEY, MINESWEEPER JQUERY GAME, SYMFONY BUNDLE PROJECT } //",
+              "link": "http://manueldelpozo.github.io/"
+            },
+            "item4": {
+              "icon": "icons/works-au10etdeco.png",
+              "title": "<strong>FLASH WEB DESIGNER </strong><br> AU 10 ET DÉCO - CLERMONT FERRAND (FRANCE) - 2011",
+              "text": "// WEB PROJECT MANAGEMENT // INTERACTION DESIGN // FLASH ANIMATIONS // MOCKUPS AND PAGE LAYOUTS // DREAMVEAWER // PHOTOGRAPHY //",
+              "link": "http://www.au10etdeco.com/"
+            }
+          }
+        }
+      }
+    },
+    "temp9": {
+      "id": 9,
+      "title": "works/arch",
+      "content": {
+        "pinitial": {
+          "text": "When I finished my degree project in Master of Architecture I moved to France to work as an urban planner and then in Poland as a architectural assistant. After those rich experiences I made some BIM projects in my country."
+        },
+        "brackets": false,
+        "pfinal": {
+          "text": false,
+          "list": {
+            "item1": {
+              "icon": "icons/works-bim.png",
+              "title": "<strong>BIM ARCHITECT </strong><br> FREELANCER - MURCIA (SPAIN) - 2014",
+              "text": "// HOUSING DESIGN WITH REVIT // IFC OUTPUT FOR STRUCTURE CALCULATION IN CYPE // BUILDING MANAGEMENT //",
+              "link": "http://issuu.com/manudelpozo/docs/pf_manuel_delpozo/5"
+            },
+            "item2": {
+              "icon": "icons/works-ja.png",
+              "title": "<strong>ARCHITECTURAL ASSISTANT </strong><br> JOJKO+NAWROCKI ARCHITEKCI - KATOWICE (POLAND) - 2012/13 ",
+              "text": "// CONTEST FOR OFFICE BUILDING IN KRAKOW // SINGLE FAMILY HOUSE SCALE MODELING // KINDERGARTEN EXTENSION (UNDER CONSTRUCTION) ",
+              "link": "http://issuu.com/manudelpozo/docs/pf_manuel_delpozo/6"
+            },
+            "item3": {
+              "icon": "icons/works-audab.png",
+              "title": "<strong>URBAN-ARCHITECT PLANNER </strong><br> AUDAB AGENCE D'URBANISME DE BESANCON - BESANCON (FRANCE) - 2011",
+              "text": "// NEW VILLAGE CENTER IN CHATILLON-LE-DUC // URBAN AND MOBILITY IMPROVEMENTS FOR BESANCON //",
+              "link": "http://issuu.com/manudelpozo/docs/pf_manuel_delpozo/10"
+            },
+            "item4": {
+              "icon": "icons/works-ulsterlines.png",
+              "title": "<strong>PROJECT ARCHITECT </strong><br> DEGREE PROJECT ULSTERLINES - BELFAST (NI UNITED KINGDOM) - 2009/11",
+              "text": "// RESEARCH OF SOCIAL AND URBAN INTERACTIONS IN BELFAST // URBAN HIGH TECH ACCESORIES // STRUCTURAL PROTOTYPES FOR SEGMENTAL BRIDGES // ",
+              "link": "http://issuu.com/manudelpozo/docs/pf_manuel_delpozo/12"
+            }
+          }
+        }
+      }
+    }
+  }
+}
