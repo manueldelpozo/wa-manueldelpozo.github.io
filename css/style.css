@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   
 html, body {
   height:100%; 
@@ -183,4 +184,9 @@ strong {
 }
 #hire-me {
   margin-top: 15px;
+=======
+#scrollable-dropdown-menu .tt-dropdown-menu {
+  max-height: 150px;
+  overflow-y: auto;
+>>>>>>> c1266e073577e7e8fd37aed08964e8c80eba3255
 }

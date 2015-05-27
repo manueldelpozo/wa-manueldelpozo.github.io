@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>w+a</title>
+	<meta name="description" content="a fast and fully-featured autocomplete library">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- librerías opcionales que activan el soporte de HTML5 para IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-2.1.3.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+
+	$(document).ready(function(){
+  
+  $.fn.invisible = function() {
+    return this.each(function() {
+      $(this).css("visibility", "hidden");
+    });
+  };
+  $.fn.visible = function() {
+    return this.each(function() {
+      $(this).css("visibility", "visible");
+    });
+  };
+
+  
+  $(".content-start").bind({
+    mouseenter: function() {
+      if( $(this).is(":visible") ) {
+        $(this).css("font-size", "35px");
+      }
+    },
+    mouseleave: function() {
+      if( $(this).is(":visible") ) {
+        $(this).css("font-size", "25px");
+      }
+    },
+    click:  function() {
+      $(".margins").removeClass("col-md-4 col-sm-3 col-xs-2",200).addClass("col-md-2 col-sm-1",200);
+      $(".center-box").removeClass("col-md-4 col-sm-6 col-xs-8",200).addClass("col-md-8 col-sm-10 col-xs-12",200).delay( 1000 ).height("80%");
+      $(this).invisible().delay( 1000 ).hide();
+      $(".contents").show().delay( 1000 ).visible();
+      //ver video automaticamente
+      $('#video').fadeIn("slow");
+      $('video').get(0).play();
+      $('#see-video').text("HIDE VIDEO").next().show();;
+    },
+    dblclick: function(){
+      if( $(".center-box") != $(".center-box") && $(".center-box") != $(".center-box").contents() && $('.contents').is(":visible") ) {
+        //$(".margins").removeClass("col-md-2 col-sm-1",200).addClass("col-md-4 col-sm-3 col-xs-2",200);
+        //$(this).removeClass("col-md-8 col-sm-10 col-xs-12",200).addClass("col-md-4 col-sm-6 col-xs-8",200).delay( 1000 ).height("25%");
+        //$(".contents").invisible().delay( 1000 ).hide();
+        //$(".content-start").show().delay( 1000 ).visible();
+      }
+    }
+  });
+  
+  $("#see-video").click( function verVideo() {
+    	if( !$('#video').is(':visible') ) {
+        $('#video').slideDown("slow");
+        $('video').get(0).play();
+        $(this).text('HIDE VIDEO').next().show();
+      } else {
+        $('#video').slideUp("slow");
+        $('video').get(0).pause();
+        $(this).text('SEE VIDEO').next().hide();
+      } 
+  });
+
+  $('#big-screen').click( function verVideo() {
+    $('.contents').children().hide().append( $('video') );
+  });
+
+  $(".bracket").bind({
+    mouseenter: function() {
+      $(this).find(".word").css({"font-size":"20px","color":"#099"});
+    },
+    mouseleave: function() {
+      $(this).find(".word").css({"font-size":"14px","color":"#000"});
+    },
+    click:  function() {
+      var section = $(this).find(".word").text();
+      $("#section").html(section);
+      $("#pinitial").empty();
+      $("#pfinal").empty();
+    }
+  });
+
+});
+
+	</script>
+	<style type="text/css">
+
+	html, body{height:100%; margin:0;padding:0}
+@import url(http://fonts.googleapis.com/css?family=Aldrich);
+
+.trans {
+	-webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+.vcenter {
+  -webkit-box-align : center;
+  -webkit-align-items : center;
+  -moz-box-align : center;
+  -ms-flex-align : center;
+  align-items : center;
+  display: flex;
+  display: -webkit-flex; /* Safari */
+}
+.vcenter div{
+   -webkit-flex: 1; /* Safari 6.1+ */
+   flex: 1; 
+        margin: 0 auto;
+}
+.contents {
+  display: none;
+  visibility: hidden;
+  height: 100%;
+	padding:0;
+  position: relative;   
+}
+   
+.content-start {
+  height: 100%;
+	padding:0;
+    font-size: 25px;
+    letter-spacing: 20px;
+    
+}
+.word {
+	font-size: 14px;
+}
+#title {
+	height: 5%;
+	margin: 0;
+  position: absolute;
+  top: 0px;
+  vertical-align: text-top;
+
+}
+#body {	
+  height: 90%;
+
+ position: absolute;
+  top: 5%;
+  vertical-align: middle;
+
+}
+#pinitial {
+  height: 30%;
+    padding: 0;
+ 
+}
+
+#brackets {
+  height: 20%;
+    padding: 0;
+  
+}
+#pfinal {
+  height: 50%;
+  padding: 0;
+  
+}
+#video {
+    display: none;
+    height: 80%;
+    padding: 0;
+}
+video {
+  position: absolute;
+  left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+#footer {
+	height: 5%;
+
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  vertical-align: text-bottom;
+ 
+}
+.squarebrackets {
+  font-family: 'Aldrich', sans-serif;
+  font-size:20px;
+ vertical-align: 50%;
+    letter-spacing: 8px;
+}
+.c1 {
+  height: 100%;
+  padding:0;
+   border-left:10px solid #000;
+   border-top:10px solid #666;
+   border-bottom:10px solid #666;
+}
+.c2 {
+  height: 100%;
+  padding:0;
+  border-right:10px solid #000;
+  border-top:10px solid #666;
+  border-bottom:10px solid #666; 
+}
+.green-a {
+    color: #099;
+}
+.green-b {
+    border-color: #699 #099;
+}
+.container-fluid{
+  height:100%;
+  display:table;
+  width: 100%;
+  padding: 0;
+}
+ 
+.row-fluid {
+    height: 100%; 
+    display:table-cell; 
+    vertical-align: middle;
+    padding: 0;
+  }
+ 
+.center-box {
+  height: 25%;
+
+  float:none;
+  margin:0 auto;
+  padding: 0;
+}
+.margins {
+  padding: 0;
+}
+.bracket {
+  height: 70%;
+}
+
+
+
+
+	</style>
+</head>
+<body>
+			
+	<div class="container-fluid">
+	<div class="row-fluid">
+      	<div class="col-md-4 col-sm-3 col-xs-2 margins trans"></div>
+      	<div class="col-md-4 col-sm-6 col-xs-8 center-box trans">
+           
+          	<div class="col-md-1 col-xs-1 c1"></div>
+          	<div class="col-md-10 col-xs-10 content-start trans text-center vcenter">
+              <div>w + <span class="green-a">a</span></div>
+          	</div>
+          
+          	<div class="col-md-10 col-xs-10 contents trans">
+           
+              <div class="col-md-12 col-xs-12 text-center lead green-a" id="title"><samp>://<span id="section">info</span>/about-me</samp></div>
+              
+                <div class="col-md-12 col-xs-12 squarebrackets text-center" id="body">
+                  
+                    <div class="col-md-12 col-xs-12 vcenter" id="pinitial"> <div>Wellcome to my web portfolio</div> </div>
+                  
+                    <div class="col-md-12 col-xs-12 trans" id="brackets">
+                      
+                      <div class="col-md-4 col-xs-4 bracket trans">
+                        <div class="col-md-2 col-xs-2 c1 green-b"></div>
+                        <div class="col-md-8 col-xs-8 contents vcenter">
+                          <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                          <div class="word trans text-center">about</div>
+                        </div>  
+                        <div class="col-md-2 col-xs-2 c2 green-b"></div>
+                      </div> 
+                      
+                      <div class="col-md-4 col-xs-4 bracket trans">
+                        <div class="col-md-2 col-xs-2 c1 green-b"></div>
+                        <div class="col-md-8 col-xs-8 contents vcenter">
+                          <span class="glyphicon glyphicon-font" aria-hidden="true"></span>
+                          <div class="word trans text-center">skills</div>
+                        </div>  
+                        <div class="col-md-2 col-xs-2 c2 green-b"></div>
+                      </div> 
+                      
+                      <div class="col-md-4 col-xs-4 bracket trans">
+                        <div class="col-md-2 col-xs-2 c1 green-b"></div>
+                        <div class="col-md-8 col-xs-8 contents vcenter">
+                          <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                          <div class="word trans text-center">works</div>
+                        </div>  
+                        <div class="col-md-2 col-xs-2 c2 green-b"></div>
+                      </div>
+                      
+                    </div>
+                  
+                    <div class="col-md-12 col-xs-12" id="pfinal">
+                         
+                        <div class="col-md-12 col-xs-12 embed-responsive-16by9" id="video">
+                            <video class="embed-responsive-item" height='100%' width="auto">
+                              <source src="video/videowebCV.webm" type="video/webm">
+                              <source src="video/videowebCV.mp4" type="video/mp4">
+                              <source src="video/videowebCV.ogv" type="video/ogg">
+                              Your browser does not support the video tag.
+                            </video>
+                        </div>
+                      	<div class="col-md-12 col-xs-12">
+                            <a class="btn btn-default" role="button" align="center" href="#video" id="see-video">SEE VIDEO</a>
+                            <a class="btn btn-default" role="button" align="center" href="#" id="big-screen" style='display:none'><span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span></a>
+                        </div>
+                          
+                    </div>
+                    
+                 </div>
+                  
+                 <div class="col-md-12 col-xs-12 text-center lead" id="footer">
+                      <strong>Manuel del Pozo</strong>
+                      <br>
+                      web-developer + architect
+                 </div>
+                
+             </div>
+                
+             <div class="col-md-1 col-xs-1 c2"></div>
+               
+      	</div>
+      	<div class="col-md-4 col-sm-3 col-xs-2 margins trans"></div>
+  	</div>
+</div>
+
+</body>
+</html>                                		
